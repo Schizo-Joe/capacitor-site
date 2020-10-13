@@ -17,5 +17,13 @@
       "source": "/docs/pwa-elements", 
       "destination": "/docs/web/pwa-elements" 
     }
+  ],
+  "routes": [
+    {
+      "src": "(.*)/page.state.json",
+      "headers": {
+        "cache-control": "max-age=31536000, immutable"
+      }
+    }
   ]
 }
